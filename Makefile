@@ -1,5 +1,5 @@
 IMAGE ?= hello-go
-TAG ?= latest
+TAG ?= $(shell git describe --tags --exact-match 2>/dev/null || git rev-parse --short HEAD)
 
 docker-build:
 	docker build -t $(IMAGE):$(TAG) .
