@@ -8,7 +8,7 @@
         "ghcr.io/devcontainers-extra/features/mise:1": {},
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
-    "postCreateCommand": "chmod +x .devcontainer/postcreate.sh; ./.devcontainer/postcreate.sh",
+    "postCreateCommand": "bash .devcontainer/post_create.sh",
     "customizations": {
         "vscode": {
             "extensions": [

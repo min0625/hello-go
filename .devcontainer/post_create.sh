@@ -5,9 +5,11 @@
 echo 'eval "$(mise activate bash --shims)"' >>~/.bash_profile # this sets up non-interactive sessions
 echo 'eval "$(mise activate bash)"' >>~/.bashrc               # this sets up interactive sessions
 
-mise trust --all
+mise trust .
 
 MISE_NODE_VERIFY=false mise install
+
+mise exec -- go mod download
 
 mise exec -- go install -v golang.org/x/tools/gopls@latest
 mise exec -- go install -v github.com/go-delve/delve/cmd/dlv@latest
