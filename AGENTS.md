@@ -16,7 +16,6 @@
 
 ## Development Workflow
 
-- 格式化程式碼：`make fmt`
 - 自動修正 lint 問題：`make fix`
 - 執行 lint 檢查：`make lint`
 - 執行測試：`make test`
