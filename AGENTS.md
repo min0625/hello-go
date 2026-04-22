@@ -16,7 +16,6 @@
 
 ## Development Workflow
 
-- 格式化程式碼：`make fmt`
 - 自動修正 lint 問題：`make fix`
 - 執行 lint 檢查：`make lint`
 - 執行測試：`make test`
@@ -30,7 +29,7 @@
 ## Code Style
 
 - 使用 `golangci-lint` 進行 lint 與格式化，設定檔位於 repo 根目錄
-- 使用 `make fmt` 格式化程式碼（呼叫 `golangci-lint fmt`）
+- 使用 `golangci-lint fmt` 格式化程式碼
 - 遵循標準 Go 命名慣例
 
 ## Build and Deployment

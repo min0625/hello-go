@@ -37,7 +37,6 @@ make docker-run
 
 | Command        | Description                         |
 | -------------- | ----------------------------------- |
-| `make fmt`     | Format code with golangci-lint      |
 | `make fix`     | Auto-fix lint issues                |
 | `make lint`    | Run lint checks                     |
 | `make test`    | Run all tests with race detection   |
