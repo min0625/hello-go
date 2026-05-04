@@ -12,7 +12,10 @@ fix:
 	go mod tidy
 	golangci-lint run -v --new-from-rev=$(NEW_FROM_REV) --fix ./...
 
-lint:
+lint-verify:
+	golangci-lint config verify
+
+lint: lint-verify
 	golangci-lint run -v --new-from-rev=$(NEW_FROM_REV) ./...
 
 test:
